@@ -28,9 +28,9 @@ const Navbar = () => {
             height={36}
             className="object-contain"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
-            Clément{" "}
-            <span className="sm:block hidden">| Javascript Mastery</span>
+          <p className="flex text-white text-[18px] font-bold cursor-pointer">
+          Clément &nbsp;
+            <span className="sm:block hidden"> | Web Developer</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div
             className={`${
               toggle ? "hidden" : "flex"
-            } p-4 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[120px] z-10 rounded-xl`}
+            } p-4 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[120px] z-10 rounded-xl sidebar ring-0`}
           >
             <ul className="list-none flex flex-col items-start gap-4">
               {navLinks.map((item) => (
