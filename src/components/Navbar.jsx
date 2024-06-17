@@ -7,6 +7,7 @@ import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -45,6 +46,39 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            src={toggle ? close : menu}
+            alt="menu"
+            className="object-contain cursor-pointer"
+            width={28}
+            height={28}
+            onClick={() => setToggle(!toggle)}
+          />
+          <div
+            className={`${
+              toggle ? "hidden" : "flex"
+            } p-4 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[120px] z-10 rounded-xl`}
+          >
+            <ul className="list-none flex flex-col items-start gap-4">
+              {navLinks.map((item) => (
+                <li
+                  key={item.id}
+                  className={`${
+                    active === item.title ? "text-white" : "text-secondary"
+                  } font-poppins text-[18px] font-medium cursor-pointer`}
+                  onClick={() => {
+                    setActive(item.title);
+                    setToggle(!toggle);
+                  }}
+                >
+                  <a href={`#${item.id}`}>{item.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   );
