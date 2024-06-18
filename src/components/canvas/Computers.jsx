@@ -25,15 +25,15 @@ const Computers = () => {
 
 const ComputersCanvas = () => {
   return (
-    <Suspense fallback={CanvasLoader}>
-      <Canvas
-        frameloop="demand"
-        shadows
-        dpr={[1, 2]}
-        camera={{ position: [20, 3, 5], fov: 25 }}
-        gl={{ preserveDrawingBuffer: true }}
-      >
-        <ambientLight intensity={0.7} />
+    <Canvas
+      frameloop="demand"
+      shadows
+      dpr={[1, 2]}
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader/>}>
+        <ambientLight intensity={0.3} />
         <directionalLight color="white" position={[-20, 50, 20]} />
         <OrbitControls
           enableZoom={false}
@@ -42,9 +42,9 @@ const ComputersCanvas = () => {
         />
         <Computers />
 
+      </Suspense>
         <Preload all />
-      </Canvas>
-    </Suspense>
+    </Canvas>
   );
 };
 
