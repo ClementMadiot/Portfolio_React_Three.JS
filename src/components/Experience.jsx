@@ -8,7 +8,6 @@ import { styles } from "../style";
 import { experiences } from "../constants";
 import { SectionWrapper } from "./layout/layout";
 import { textVariant } from "../utils/motion";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 const ExperienceCard = ({ experience }) => {
   return (
