@@ -199,7 +199,7 @@ const testimonials = [
 const projects = [
   {
     name: "HookBank",
-    description:
+    desc:
       "Web design of an online bank, the web site propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
     tags: [
       {
@@ -216,11 +216,11 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    githubLink: "https://github.com/",
   },
   {
     name: "Brainwave",
-    description:
+    desc:
       "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app",
     tags: [
       {
@@ -237,11 +237,11 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    githubLink: "https://github.com/",
   },
   {
     name: "Gerich Restaurant",
-    description:
+    desc:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque praesentium enim, consectetur iste natus fugit doloremque asperiores modi et.",
     tags: [
       {
@@ -258,7 +258,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    githubLink: "https://github.com/",
   },
 ];
 
