@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { Sections } from './layout/layout'
+import { SectionWrapper } from './layout/layout'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -57,4 +57,4 @@ const About = () => {
   );
 };
 
-export default Sections(About, 'about') ;
+export default SectionWrapper(About, 'about') ;
