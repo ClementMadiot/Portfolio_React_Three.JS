@@ -1,11 +1,13 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import EmailJS from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
+// import { init } from "@emailjs/browser";
 
 import { SectionWrapper } from "./layout/layout";
 import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
+// init(process.env.ID);
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,9 +19,51 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
 
-  const handleSubmit = (e) => {};
+    setform({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Clement",
+          from_email: form.email,
+          to_email: "clementmadiot09@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY
+      )
+      .then(() => {
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
+
+        setform({
+          name: "",
+          email: "",
+          message: "",
+        }),
+          (error) => {
+            setLoading(false);
+
+            console.log(error);
+
+            alert("Something went wrong.");
+          };
+      });
+  };
   return (
     <section
       id="contact"
@@ -69,7 +113,7 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               type="text"
-              name="name"
+              name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
@@ -78,15 +122,20 @@ const Contact = () => {
             />
           </label>
 
-          <button type="submit" className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">{loading ? "Sending..." : "Send"}</button>
+          <button
+            type="submit"
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
         </form>
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-        >
-          <EarthCanvas/>
+      >
+        <EarthCanvas />
       </motion.div>
     </section>
   );
