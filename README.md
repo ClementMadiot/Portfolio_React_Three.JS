@@ -1,5 +1,3 @@
-
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -40,3 +38,7 @@ send emails, html and attachments (files, streams and strings) from node.js to a
 
 
 # Portfolio_React_Three.JS
+
+Suspense : show an fallback to the loading page
+OrbitControls : allowed the user to move the object with his mouse
+useGLTF : add to a variable to display the 3D object
