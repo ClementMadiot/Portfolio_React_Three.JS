@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon }) => {
             height={64}
             className="object-contain"
           />
-          <h3 className="text-white text-xl font-bold text-center">{title}</h3>
+          <h3 className="text-white text-xl font-medium text-center font-sora">{title}</h3>
         </div>
       </motion.div>
     </Tilt>

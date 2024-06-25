@@ -2,7 +2,7 @@ import {
   mobile,
   backend,
   creator,
-  web,
+  webDesign,
   javascript,
   typescript,
   html,
@@ -19,10 +19,10 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  brainwave,
+  geritch,
+  hookbank,
 } from "../assets";
 
 export const navLinks = [
@@ -47,7 +47,7 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: webDesign,
   },
   {
     title: "React Native Developer",
@@ -211,16 +211,13 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "tailwind",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    githubLink: "https://github.com/",
+    image: hookbank ,
+    githubLink: "https://github.com/ClementMadiot/Bank_modern_app_react-TailwindCSS",
+    webSiteLink: 'https://bank-modern-cm.netlify.app/',
   },
   {
     name: "Brainwave",
@@ -232,37 +229,35 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "react router",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    githubLink: "https://github.com/",
+    image: brainwave,
+    githubLink: "https://github.com/ClementMadiot/Brainwave_react_app_tailwindCSS",
+    webSiteLink: 'https://brainwave-ai-cm.netlify.app/',
   },
   {
     name: "Gerich Restaurant",
     desc:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque praesentium enim, consectetur iste natus fugit doloremque asperiores modi et.",
+      "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "css",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    githubLink: "https://github.com/",
+    image: geritch,
+    githubLink: "https://github.com/ClementMadiot/Web_Design_Gerich_Restaurant_React",
+    webSiteLink: 'https://main--geritch-restaurant-cm.netlify.app/',
   },
 ];
 

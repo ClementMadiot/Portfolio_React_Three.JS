@@ -1,11 +1,10 @@
-import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
+import backend from "./intro/backend.png";
+import creator from "./intro/creator.png";
+import mobile from "./intro/mobile.png";
+import webDesign from "./intro/web.png";
+import logo from "./svg/logo.svg";
+import menu from "./svg/menu.svg";
+import close from "./svg/close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -26,16 +25,18 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import brainwave from "./project/brainwave.png"
+import geritch from './project/Geritch.png'
+import hookbank from './project/hookbank.png'
+import github from "./project/github.png";
+import website from "./project/web.png";
 
 export {
   logo,
   backend,
   creator,
   mobile,
-  web,
+  webDesign,
   github,
   menu,
   close,
@@ -56,7 +57,8 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  brainwave,
+  geritch,
+  hookbank,
+  website,
 };

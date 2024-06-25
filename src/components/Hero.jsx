@@ -9,7 +9,7 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-cp"/>
-          <div className="w-1 sm:h-80 h-4- violet-gradient"/>
+          <div className="w-1 sm:h-80 h-84 violet-gradient"/>
         </div>
 
           <div>
