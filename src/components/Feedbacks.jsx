@@ -46,11 +46,11 @@ const Feedbacks = () => {
   return (
     <Section className="mt-12 bg-black-100 rounded-3xl">
       <div
-        className='padding bg-tertiary rounded-2xl min-h-[300px]'
+        className='padding bg-tertiary rounded-2xl min-h-[300px] py-6'
       >
         <Subheading title="Testimonials" desc="What people say" />
       </div>
-      <div className='paddingX -mt-20 pb-14 flex flex-wrap gap-7'>
+      <div className='-mt-20 pb-14 flex justify-center flex-wrap gap-7'>
         {testimonials.map((item, index) => (
           <FeedbacksCard
             key={`testimonmial-${index}`}

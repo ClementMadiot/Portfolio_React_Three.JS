@@ -51,7 +51,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <Section id='work'>
+    <Section id='experience'>
       <Subheading className='mt-8' textVariant='textVariant' title='Work Experience' desc='What I have done so far' />
 
       <div className="mt-20 flex flex-col">

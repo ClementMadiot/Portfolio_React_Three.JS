@@ -40,10 +40,9 @@ const About = () => {
   return (
     <Section
       id="about"
-      className='padding max-w-7xl mx-auto relative z-0'
     >
       <Subheading
-        title="Overview."
+        title="Overview"
         desc="Introduction"
         paragraph={paragraphAbout}
       />

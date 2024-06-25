@@ -72,7 +72,7 @@ const Contact = ({ textLeft }) => {
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
         >
-          <Subheading title='Contact.' desc='Get in touch' />
+          <Subheading title='Contact' desc='Get in touch' />
           <form
             method="get"
             ref={formRef}

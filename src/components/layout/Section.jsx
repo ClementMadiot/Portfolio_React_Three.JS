@@ -5,7 +5,7 @@ const Section = ({ className, id, children }) => {
   return (
     <motion.section
       id={id}
-      className={` padding max-w-7xl mx-auto relative z-0
+      className={` sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0
      ${className || ""}`}
       variants={staggerContainer()}
       initial="hidden"
