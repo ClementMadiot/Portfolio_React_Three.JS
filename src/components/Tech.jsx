@@ -1,17 +1,21 @@
 import { technologies } from "../constants";
-import { BallCanvas } from "./canvas"
-import { SectionWrapper } from "./layout/layout";
+import { BallCanvas } from "./canvas";
+import Section from "./layout/Section";
+import Subheading from "./layout/Subheading";
 
 const Tech = () => {
   return (
-    <section className="flex flex-row flex-wrap justify-center gap-10">
-{technologies.map((tech, index) => (
-  <div key={`technologie-${index}`} className="w-28 h-28">
-    <BallCanvas icon={tech.icon}/>
-  </div>
-))}
-    </section>
-  )
-}
+    <>
+      <Subheading title='My Skill' desc='What I know' className='mt-4' />
+    <Section id='skill' className="flex flex-row flex-wrap justify-center gap-10">
+      {technologies.map((tech, index) => (
+        <div key={`technologie-${index}`} className="w-28 h-28">
+          <BallCanvas icon={tech.icon} />
+        </div>
+      ))}
+    </Section>
+    </>
+  );
+};
 
-export default SectionWrapper(Tech,'');
+export default Tech;

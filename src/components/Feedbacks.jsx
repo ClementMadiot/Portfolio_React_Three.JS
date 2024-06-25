@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../style";
-import SectionWrapper from "./layout/SectionWrapper";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import { testimonials } from "../constants";
+import Section from "./layout/Section";
+import Subheading from "./layout/Subheading";
 
 const FeedbacksCard = ({
   index,
@@ -44,16 +44,13 @@ const FeedbacksCard = ({
 };
 const Feedbacks = () => {
   return (
-    <section className="mt-12 bg-black-100 rounded-3xl">
+    <Section className="mt-12 bg-black-100 rounded-3xl">
       <div
-        className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
+        className='padding bg-tertiary rounded-2xl min-h-[300px]'
       >
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What people say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials</h2>
-        </motion.div>
+        <Subheading title="Testimonials" desc="What people say" />
       </div>
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className='paddingX -mt-20 pb-14 flex flex-wrap gap-7'>
         {testimonials.map((item, index) => (
           <FeedbacksCard
             key={`testimonmial-${index}`}
@@ -62,8 +59,8 @@ const Feedbacks = () => {
           />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 
-export default SectionWrapper(Feedbacks, "");
+export default Feedbacks;

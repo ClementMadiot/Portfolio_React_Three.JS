@@ -1,12 +1,12 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
-import { styles } from "../style";
 import { github } from "../assets";
-import SectionWrapper from "./layout/SectionWrapper";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-import { max } from "three/examples/jsm/nodes/Nodes.js";
+import { fadeIn } from "../utils/motion";
+
+import SectionWrapper from "./layout/SectionWrapper";
+import Subheading from "./layout/Subheading";
 
 const ProjectCard = ({ index, name, desc, tags, image, githubLink }) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -65,25 +65,13 @@ const ProjectCard = ({ index, name, desc, tags, image, githubLink }) => (
 );
 
 const Works = () => {
+  const paragraphWork =
+    "Following projects showcases my skills and experience through real-words examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my abilities to solve complex problems, work with different thechnologies and manage projfects effenctively.";
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
-      </motion.div>
+      <Subheading title="Projects." desc="my work" paragraph={paragraphWork} />
 
       <div className="w-full flex flex-col">
-        <motion.p
-          variants={fadeIn()}
-          className="mt-3 text-secondary text-lg max-w-3xl"
-        >
-          Following projects showcases my skills and experience through
-          real-words examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          abilities to solve complex problems, work with different thechnologies
-          and manage projfects effenctively.
-        </motion.p>
-
         <div className="mt-20 flex flex-wrap gap-7">
           {projects.map((item, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...item} />

@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../style";
 import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`paddingX absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-cp"/>
@@ -14,8 +13,8 @@ const Hero = () => {
         </div>
 
           <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>Hi, I&apos;m <span className="text-cp">Clément</span></h1>
-            <p className={`${styles.heroSubText} my-2 text-white-100`}>I develop 3d visuals, user <br /> interfaces and web applications</p>
+            <h1 className='font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>Hi, I&apos;m <span className="text-cp">Clément</span></h1>
+            <p className='my-2 text-white-100 font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]'>I develop 3d visuals, user <br /> interfaces and web applications</p>
           </div>
       </div>
 
