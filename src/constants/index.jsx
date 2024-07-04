@@ -15,11 +15,10 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   threejs,
+  OpenClassrooms,
+  freecodecamp,
+  logo,
   brainwave,
   geritch,
   hookbank,
@@ -120,55 +119,41 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Formation Web Developer",
+    company_name: "OpenClassrooms",
+    icon: OpenClassrooms,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Dec 2022 - Sep 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I completed my self-taught training through OpenClassrooms, an online platform offering courses and programs web development.",
+      "I Developing web applications using React.js and other related technologies.",
+      "I Implementing responsive design and ensuring cross-browser compatibility.",
+      "I Implementing few technologies as MongoDB and Express.JS to create a functional database",
+      "I learned the fundamentals of both front-end and back-end development and earned a certification.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Ongoing Web Development Training",
+    company_name: "FreeCodeCamp",
+    icon: freecodecamp,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I am currently enrolled in the web development program at freeCodeCamp, a well-regarded online platform for coding education.",
+      "I have completed the CSS module, gaining a strong understanding of styling web pages",
+      "I am now working through the JavaScript module to enhance my programming skills",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Portfolio",
+    company_name: "",
+    icon: logo,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jun 2024 - Jul 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I developing a web sites using React.js, TailwindCSS and other related technologies.",
+      "I implementing responsive design and ensuring cross-browser compatibility.",
+      "I using Three.js to create dynamic and engaging animations"
     ],
   },
 ];
@@ -203,8 +188,8 @@ const testimonials = [
 const projects = [
   {
     name: "HookBank",
-    desc:
-      "Web design of an online bank, the web site propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
+    desc: "Web design of an online bank, the web site propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
+    value: "react",
     tags: [
       {
         name: "react",
@@ -215,14 +200,15 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: hookbank ,
-    githubLink: "https://github.com/ClementMadiot/Bank_modern_app_react-TailwindCSS",
-    webSiteLink: 'https://bank-modern-cm.netlify.app/',
+    image: hookbank,
+    githubLink:
+      "https://github.com/ClementMadiot/Bank_modern_app_react-TailwindCSS",
+    webSiteLink: "https://bank-modern-cm.netlify.app/",
   },
   {
     name: "Brainwave",
-    desc:
-      "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app",
+    desc: "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app",
+    value: "react",
     tags: [
       {
         name: "react",
@@ -238,13 +224,14 @@ const projects = [
       },
     ],
     image: brainwave,
-    githubLink: "https://github.com/ClementMadiot/Brainwave_react_app_tailwindCSS",
-    webSiteLink: 'https://brainwave-ai-cm.netlify.app/',
+    githubLink:
+      "https://github.com/ClementMadiot/Brainwave_react_app_tailwindCSS",
+    webSiteLink: "https://brainwave-ai-cm.netlify.app/",
   },
   {
     name: "Gerich Restaurant",
-    desc:
-      "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
+    desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
+    value: "javascript",
     tags: [
       {
         name: "react",
@@ -256,9 +243,35 @@ const projects = [
       },
     ],
     image: geritch,
-    githubLink: "https://github.com/ClementMadiot/Web_Design_Gerich_Restaurant_React",
-    webSiteLink: 'https://main--geritch-restaurant-cm.netlify.app/',
+    githubLink:
+      "https://github.com/ClementMadiot/Web_Design_Gerich_Restaurant_React",
+    webSiteLink: "https://main--geritch-restaurant-cm.netlify.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+// const buttonFilter = [
+//   {
+//     name: "All",
+//     value: "all",
+//   },
+//   {
+//     name: "React",
+//     value: "react",
+//   },
+//   {
+//     name: "Javascript",
+//     value: "javascript",
+//   },
+//   {
+//     name: "TailwindCSS",
+//     value: "tailwindCSS",
+//   },
+// ];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+};
