@@ -8,7 +8,7 @@ import  Loader  from '../layout/Loader'
 const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
   return (
-    <primitive object={earth.scene} scale={2.1} position-y={0} rotation-y={0} />
+    <primitive object={earth.scene} scale={1.7} position-y={0} rotation-y={0} />
   );
 };
 
