@@ -46,6 +46,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
         <SideBar/>
       </div>
     </nav>

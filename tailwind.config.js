@@ -14,7 +14,18 @@ export default {
         "black-200": "#090325",
         "white-100": "#f3f3f3",
         cp: "#915eff",
-        bracket: '#ADA8C3'
+        bracket: '#ADA8C3',
+        // tag project 
+        gray: '#434343',
+        black: '#000000',
+        cyan: '#11998e',
+        blue: '#2f80ed',
+        lightBlue: '#56ccf2',
+        green:'#38ef7d',
+        pink: '#ec008c',
+        orange: '#fc6767',
+        red: '#f12711',
+        yellow: '#f5af19',
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -53,10 +64,22 @@ export default {
           "@apply sm:text-[18px] text-[14px] uppercase tracking-wider text-center font-code":
             {},
         },
-        // "sidebar": {
-        //   "@apply  ":
-        //   {},
-        // },
+        ".green-text-gradient": {
+          "@apply bg-gradient-to-t from-cyan to-green bg-clip-text text-transparent":
+            {},
+        },
+        ".blue-text-gradient": {
+          "@apply bg-gradient-to-t from-blue to-lightBlue bg-clip-text text-transparent":
+            {},
+        },
+        ".pink-text-gradient": {
+          "@apply bg-gradient-to-t from-pink to-orange bg-clip-text text-transparent":
+            {},
+        },
+        ".orange-text-gradient": {
+          "@apply bg-gradient-to-t from-red to-yellow bg-clip-text text-transparent":
+            {},
+        },
       });
       addUtilities({
         ".tap-highlight-color": {

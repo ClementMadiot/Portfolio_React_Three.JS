@@ -3,8 +3,6 @@ import creator from "./intro/creator.png";
 import mobile from "./intro/mobile.png";
 import webDesign from "./intro/web.png";
 import logo from "./svg/logo.svg";
-import menu from "./svg/menu.svg";
-import close from "./svg/close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -37,8 +35,6 @@ export {
   mobile,
   webDesign,
   github,
-  menu,
-  close,
   css,
   docker,
   figma,

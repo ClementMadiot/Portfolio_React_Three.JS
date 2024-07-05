@@ -1,44 +1,50 @@
-
 import React, { useState } from "react";
 
 import { navLinks } from "../../constants";
-import { menu, close } from "../../assets";
+import { HiMenuAlt2 } from "react-icons/hi";
+import { IoClose } from "react-icons/io5";
 
 const SideBar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
     <div className="md:hidden flex flex-1 justify-end items-center">
-      <img
-        src={toggle ? close : menu}
-        alt="menu"
-        className="object-contain cursor-pointer"
-        width={28}
-        height={28}
-        onClick={() => setToggle(!toggle)}
+      <HiMenuAlt2
+        className={`w-[28px] h-[28px] cursor-pointer rotate-180 ${
+          toggle ? "hidden" : "flex"
+        }`}
+        color="#fff"
+        onClick={() => setToggle(true)}
       />
-      <div
-        className={`${
-          toggle ? "flex" : "hidden"
-        } p-4 black-gradient absolute top-[3.8rem] right-0 mx-1 my-2 min-w-[120px] z-10 rounded-xl ring-0 slidebar`}
-      >
-        <ul className="list-none flex flex-col items-start gap-4">
-          {navLinks.map((item) => (
-            <li
-              key={item.id}
-              className={`${
-                active === item.title ? "text-white" : "text-secondary"
-              } font-poppins text-[18px] font-medium cursor-pointer`}
-              onClick={() => {
-                setActive(item.title);
-                setToggle(!toggle);
-              }}
-            >
-              <a href={`#${item.id}`}>{item.title}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      {toggle && (
+        <>
+          <IoClose
+            className="w-[28px] h-[28px] cursor-pointer"
+            color="#fff"
+            onClick={() => setToggle(false)}
+          />
+          <div className="p-6 bg-gradient-to-r from-gray to-black  absolute top-20 ring-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar">
+            <ul className="list-none flex flex-col justify-end flex-1">
+              {navLinks.map((nav, index) => (
+                <li
+                  key={nav.id}
+                  className={`${
+                    active === nav.title ? "text-white" : "text-secondary"
+                  } ${
+                    index === navLinks.length - 1 ? "mr-0" : "mb-4"
+                  } font-poppins font-medium text-[18px] hover:text-white transition duration-200 ease-out cursor-pointer`}
+                  onClick={() => {
+                    setActive(nav.title);
+                    setToggle(!toggle);
+                  }}
+                >
+                  <a onClick={() => setToggle(false)} href={`#${nav.id}`}>{nav.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
     </div>
   );
 };
