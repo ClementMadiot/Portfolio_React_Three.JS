@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo} from "../assets";
+import SideBar from "./layout/SideBar";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
+
   return (
     <nav
       className='sm:px-10 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-primary'
@@ -45,39 +46,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        <div className="md:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="object-contain cursor-pointer"
-            width={28}
-            height={28}
-            onClick={() => setToggle(!toggle)}
-          />
-          <div
-            className={`${
-              toggle ? "flex" : "hidden"
-            } p-4 black-gradient absolute top-[3.8rem] right-0 mx-1 my-2 min-w-[120px] z-10 rounded-xl ring-0 slidebar`}
-          >
-            <ul className="list-none flex flex-col items-start gap-4">
-              {navLinks.map((item) => (
-                <li
-                  key={item.id}
-                  className={`${
-                    active === item.title ? "text-white" : "text-secondary"
-                  } font-poppins text-[18px] font-medium cursor-pointer`}
-                  onClick={() => {
-                    setActive(item.title);
-                    setToggle(!toggle);
-                  }}
-                >
-                  <a href={`#${item.id}`}>{item.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        <SideBar/>
       </div>
     </nav>
   );
