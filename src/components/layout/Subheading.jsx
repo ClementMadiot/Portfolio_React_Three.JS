@@ -15,7 +15,7 @@ const Subheading = ({ title, desc, paragraph }) => {
         <h2 className='h2'>{title}</h2>
       </motion.div>
       {paragraph && (
-        <div className="w-full flex flex-col paddingX">
+        <div className="w-full flex flex-col sm:px-16 px-6">
           <motion.p
             variants={fadeIn()}
             className="mt-4 text-secondary text-lg max-w-3xl"

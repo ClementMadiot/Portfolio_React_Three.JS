@@ -12,7 +12,7 @@ const SectionWrapper = (Component, idName) => function HOC() {
       once: true,
       amount: 0.25
     }}
-    className='padding max-w-7xl mx-auto relative z-0'
+    className='sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0'
     >
       <span className="block -mt-[100px] pb-[50px]" id={idName}>&nbsp;</span>
       <Component/>

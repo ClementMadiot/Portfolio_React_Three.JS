@@ -46,7 +46,7 @@ const Feedbacks = () => {
   return (
     <Section className="mt-12 bg-black-100 rounded-3xl">
       <div
-        className='padding bg-tertiary rounded-2xl min-h-[300px] py-6'
+        className='sm:px-16 px-6 sm:py-16 py-6 bg-tertiary rounded-2xl min-h-[300px]'
       >
         <Subheading title="Testimonials" desc="What people say" />
       </div>

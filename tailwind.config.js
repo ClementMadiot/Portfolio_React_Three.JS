@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { fontFamily } from "tailwindcss/defaultTheme";
+// import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
@@ -21,6 +21,7 @@ export default {
       },
       screens: {
         xs: "450px",
+        xs:"960px"
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
@@ -30,11 +31,6 @@ export default {
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
       },
-      p: {
-        paddingX: 'sm:px-16 px-6',
-        paddingY: 'sm:py-16 py-6',
-        padding: "sm:px-16 px-6 sm:py-16 py-10",
-      }
     },
   },
   plugins: [
@@ -57,6 +53,10 @@ export default {
           "@apply sm:text-[18px] text-[14px] uppercase tracking-wider text-center font-code":
             {},
         },
+        // "sidebar": {
+        //   "@apply  ":
+        //   {},
+        // },
       });
       addUtilities({
         ".tap-highlight-color": {
