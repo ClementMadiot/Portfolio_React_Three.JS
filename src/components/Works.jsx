@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { github, website } from "../assets";
 import { projects } from "../constants";
-import { getProject, filterProjects } from "./projectFilter";
+// import { getProject, filterProjects } from "./projectFilter";
 import { fadeIn } from "../utils/motion";
 
 import SectionWrapper from "./layout/SectionWrapper";
@@ -76,38 +76,12 @@ const ProjectCard = ({
 );
 
 const Works = () => {
-  const [filter, setFilter] = useState(null);
-  useEffect(() => {
-    setFilter(getProject());
-  }, []);
-
-  function handleFilter(e) {
-    let typeButton = e.target.value;
-    typeButton !== "all"
-      ? setFilter(filterProjects(typeButton))
-      : setFilter(getProject());
-  }
-
   const paragraphWork =
     "Following projects showcases my skills and experience through real-words examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my abilities to solve complex problems, work with different thechnologies and manage projfects effenctively.";
   return (
     <>
       <Section id="project">
         <Subheading title="Projects" desc="my work" paragraph={paragraphWork} />
-
-        {/* <article className="flex justify-center mt-8">
-          {buttonFilter &&
-            buttonFilter.map((item, index) => (
-              <button
-                className="inline-block rounded bg-slate-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white mx-4 transition duration-150 ease-in-out"
-                key={`key-btn-${index}`}
-                value={item.value}
-                onClick={handleFilter}
-              >
-                {item.name}
-              </button>
-            ))}
-        </article> */}
 
         <div className="w-full flex flex-col">
           <div className="mt-16 flex justify-center flex-wrap gap-7">
