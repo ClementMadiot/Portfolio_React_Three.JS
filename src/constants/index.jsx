@@ -158,7 +158,7 @@ const experiences = [
     points: [
       "I developing a web sites using React.js, TailwindCSS and other related technologies.",
       "I implementing responsive design and ensuring cross-browser compatibility.",
-      "I using Three.js to create dynamic and engaging animations"
+      "I using Three.js to create dynamic and engaging animations",
     ],
   },
 ];
@@ -195,6 +195,12 @@ const projects = [
     name: "HookBank",
     desc: "Web design of an online bank, the web site propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
     category: "React",
+    categories: [
+      {
+        javascript: true,
+        react: true,
+      },
+    ],
     tags: [
       {
         name: "react",
@@ -214,6 +220,12 @@ const projects = [
     name: "Brainwave",
     desc: "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app",
     category: "React",
+    categories: [
+      {
+        javascript: false,
+        react: true,
+      },
+    ],
     tags: [
       {
         name: "react",
@@ -237,6 +249,12 @@ const projects = [
     name: "Gerich Restaurant",
     desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
     category: "React",
+    categories: [
+      {
+        javascript: false,
+        react: true,
+      },
+    ],
     tags: [
       {
         name: "react",
@@ -256,6 +274,12 @@ const projects = [
     name: "Gerich Restaurant",
     desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
     category: "Javascript",
+    categories: [
+      {
+        javascript: true,
+        react: false,
+      },
+    ],
     tags: [
       {
         name: "react",
@@ -273,10 +297,4 @@ const projects = [
   },
 ];
 
-export {
-  services,
-  technologies,
-  experiences,
-  testimonials,
-  projects,
-};
+export { services, technologies, experiences, testimonials, projects };

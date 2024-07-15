@@ -15,15 +15,13 @@ const Works = () => {
     if (word === "All") {
       setItems(projects);
     } else if (word === "React") {
-      const filtered = projects.filter((item) => item.category === "React");
+      const filtered = projects.filter((item) => item.categories[0].react === true);
       setItems(filtered);
     } else if (word === "Javascript") {
       const filtered = projects.filter(
-        (item) => item.category === "Javascript"
-      );
+        (item) => item.categories[0].javascript === true);
       setItems(filtered);
     }
-    console.log(word);
   };
 
   const menuProjects = [...new Set(projects.map((val) => val.category))];
