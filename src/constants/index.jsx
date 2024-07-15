@@ -194,7 +194,7 @@ const projects = [
   {
     name: "HookBank",
     desc: "Web design of an online bank, the web site propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
-    value: "react",
+    category: "React",
     tags: [
       {
         name: "react",
@@ -213,7 +213,7 @@ const projects = [
   {
     name: "Brainwave",
     desc: "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app",
-    value: "react",
+    category: "React",
     tags: [
       {
         name: "react",
@@ -236,7 +236,26 @@ const projects = [
   {
     name: "Gerich Restaurant",
     desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
-    value: "javascript",
+    category: "React",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+    ],
+    image: geritch,
+    githubLink:
+      "https://github.com/ClementMadiot/Web_Design_Gerich_Restaurant_React",
+    webSiteLink: "https://main--geritch-restaurant-cm.netlify.app/",
+  },
+  {
+    name: "Gerich Restaurant",
+    desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
+    category: "Javascript",
     tags: [
       {
         name: "react",
@@ -253,25 +272,6 @@ const projects = [
     webSiteLink: "https://main--geritch-restaurant-cm.netlify.app/",
   },
 ];
-
-// const buttonFilter = [
-//   {
-//     name: "All",
-//     value: "all",
-//   },
-//   {
-//     name: "React",
-//     value: "react",
-//   },
-//   {
-//     name: "Javascript",
-//     value: "javascript",
-//   },
-//   {
-//     name: "TailwindCSS",
-//     value: "tailwindCSS",
-//   },
-// ];
 
 export {
   services,
