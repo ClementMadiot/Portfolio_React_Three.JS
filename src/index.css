@@ -21,11 +21,11 @@
   color-scheme: dark;
   font-family: var(--font-poppins);
 }
-.no-transition{
-  opacity: 1 !important;
-  transform: none !important;
-}
+
 /* card  */
+
+
+
 .violet-gradient {
   background: #804dee;
   background: -webkit-linear-gradient(-90deg,
@@ -50,6 +50,7 @@
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);

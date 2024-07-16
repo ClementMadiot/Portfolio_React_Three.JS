@@ -1,7 +1,7 @@
-import { technologies } from "../constants";
-import { BallCanvas } from "./canvas";
-import Section from "./layout/Section";
-import Subheading from "./layout/Subheading";
+import { technologies } from "../../constants";
+import  BallCanvas  from "./Ball";
+import Section from "../layout/Section";
+import Subheading from "../layout/Subheading";
 
 const Tech = () => {
   return (

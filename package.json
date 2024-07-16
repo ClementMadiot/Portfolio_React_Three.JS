@@ -15,7 +15,7 @@
     "@react-three/fiber": "^8.16.8",
     "@types/three": "^0.165.0",
     "bootstrap": "^5.3.3",
-    "framer-motion": "^11.2.10",
+    "framer-motion": "^11.3.2",
     "maath": "^0.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

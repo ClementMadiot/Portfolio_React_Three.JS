@@ -2,10 +2,10 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { EarthCanvas } from "./canvas";
-import { slideIn } from "../utils/motion";
-import Section from "./layout/Section";
-import Subheading from "./layout/Subheading";
+import Earth from "./Earth";
+import { slideIn } from "../../utils/motion";
+import Section from ".././layout/Section";
+import Subheading from ".././layout/Subheading";
 
 const Contact = () => {
   const formRef = useRef();
@@ -130,7 +130,7 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
-          <EarthCanvas />
+          <Earth />
         </motion.div>
       </div>
     </Section>

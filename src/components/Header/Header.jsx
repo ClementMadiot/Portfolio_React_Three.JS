@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-import { ComputersCanvas } from "./canvas";
-const Hero = () => {
+import  ComputersCanvas  from "./Computers";
+const Header = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -41,4 +41,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Header;

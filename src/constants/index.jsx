@@ -12,7 +12,6 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
   threejs,
   sass,
   graphQL,
@@ -20,9 +19,6 @@ import {
   OpenClassrooms,
   freecodecamp,
   logo,
-  brainwave,
-  geritch,
-  hookbank,
 } from "../assets";
 
 export const navLinks = [
@@ -190,111 +186,4 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
-    name: "HookBank",
-    desc: "Web design of an online bank, the web site propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
-    category: "React",
-    categories: [
-      {
-        javascript: true,
-        react: true,
-      },
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "green-text-gradient",
-      },
-    ],
-    image: hookbank,
-    githubLink:
-      "https://github.com/ClementMadiot/Bank_modern_app_react-TailwindCSS",
-    webSiteLink: "https://bank-modern-cm.netlify.app/",
-  },
-  {
-    name: "Brainwave",
-    desc: "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app",
-    category: "React",
-    categories: [
-      {
-        javascript: false,
-        react: true,
-      },
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react router",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: brainwave,
-    githubLink:
-      "https://github.com/ClementMadiot/Brainwave_react_app_tailwindCSS",
-    webSiteLink: "https://brainwave-ai-cm.netlify.app/",
-  },
-  {
-    name: "Gerich Restaurant",
-    desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
-    category: "React",
-    categories: [
-      {
-        javascript: false,
-        react: true,
-      },
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-    ],
-    image: geritch,
-    githubLink:
-      "https://github.com/ClementMadiot/Web_Design_Gerich_Restaurant_React",
-    webSiteLink: "https://main--geritch-restaurant-cm.netlify.app/",
-  },
-  {
-    name: "Gerich Restaurant",
-    desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
-    category: "Javascript",
-    categories: [
-      {
-        javascript: true,
-        react: false,
-      },
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-    ],
-    image: geritch,
-    githubLink:
-      "https://github.com/ClementMadiot/Web_Design_Gerich_Restaurant_React",
-    webSiteLink: "https://main--geritch-restaurant-cm.netlify.app/",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials };
