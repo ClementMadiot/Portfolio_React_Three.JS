@@ -24,7 +24,7 @@ export default {
         green:'#38ef7d',
         pink: '#ec008c',
         orange: '#fc6767',
-        red: '#f12711',
+        red: '#FF0000',
         yellow: '#f5af19',
       },
       boxShadow: {
@@ -64,20 +64,29 @@ export default {
           "@apply sm:text-[18px] text-[14px] uppercase tracking-wider text-center font-code":
             {},
         },
-        ".green-text-gradient": {
-          "@apply bg-gradient-to-t from-cyan to-green bg-clip-text text-transparent":
+        // color text gradient
+        ".cyan-text-gradient": {
+          "@apply bg-gradient-to-t from-cyan to-lightBlue bg-clip-text text-transparent":
             {},
         },
         ".blue-text-gradient": {
           "@apply bg-gradient-to-t from-blue to-lightBlue bg-clip-text text-transparent":
             {},
         },
-        ".pink-text-gradient": {
-          "@apply bg-gradient-to-t from-pink to-orange bg-clip-text text-transparent":
+        ".light-blue-text-gradient": {
+          "@apply bg-gradient-to-t from-[#ADD8E6] to-lightBlue bg-clip-text text-transparent":
+            {},
+        },
+        ".red-text-gradient": {
+          "@apply bg-gradient-to-t from-red to-[#E10000] bg-clip-text text-transparent":
             {},
         },
         ".orange-text-gradient": {
-          "@apply bg-gradient-to-t from-red to-yellow bg-clip-text text-transparent":
+          "@apply bg-gradient-to-t from-orange to-yellow bg-clip-text text-transparent":
+            {},
+        },
+        ".yellow-text-gradient": {
+          "@apply bg-gradient-to-t from-yellow to-[#DBC300] bg-clip-text text-transparent":
             {},
         },
       });

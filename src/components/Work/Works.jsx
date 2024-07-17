@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { projects } from "./projectIndex";
-import { Reveal } from "./projectIndex";
+import { Reveal, SlideReveal } from "./projectIndex";
 
 import Section from ".././layout/Section";
 import Subheading from ".././layout/Subheading";
@@ -11,16 +11,16 @@ const Works = () => {
     "Following projects showcases my skills and experience through real-words examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my abilities to solve complex problems, work with different thechnologies and manage projfects effenctively.";
 
   const [project, setProject] = useState([]);
-  const [categories, setcategories] = useState([]);
+  // const [categories, setcategories] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
+  const categories = ["React", "Javascript"];
 
-  
   useEffect(() => {
-    setcategories([...new Set(projects.map((item) => item.categories))]);
+    // setcategories([...new Set(projects.map((item) => item.categories))]);
     if (activeFilter === "All") {
       setProject(projects);
     } else {
-      setProject(projects.filter((item) => item.categories === activeFilter))
+      setProject(projects.filter((item) => item.categories === activeFilter));
     }
   }, [activeFilter]);
 
@@ -31,21 +31,21 @@ const Works = () => {
     } else {
       filteredData = projects.filter((item) => item.categories === category);
     }
-    setProject(filteredData)
-    setActiveFilter(category)
+    setProject(filteredData);
+    setActiveFilter(category);
   };
-
   return (
-    <Reveal className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0"
-    >
+    <Reveal className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0">
       <Section id="project">
         <Subheading title="Projects" desc="my work" paragraph={paragraphWork} />
 
         <div className="w-full flex flex-col">
-          <article className="flex justify-center mt-2">
+          <article className="flex justify-center mt-8">
             {/* button "All"  */}
             <button
-              className={`text-white bg-slate-700 p-1 px-2 mx-3 font-medium ${activeFilter === "All" ? "bg-purple-800" : "" }`}
+              className={`text-base p-1 px-4 mx-3 font-medium rounded-lg hover:text-white-100 transition-colors ${
+                activeFilter === "All" ? "bg-cp text-white-100" : "text-secondary bg-tertiary"
+              }`}
               onClick={() => handleBtns("All")}
             >
               All
@@ -54,16 +54,20 @@ const Works = () => {
             {categories.map((category) => (
               <button
                 key={category}
-                className={`text-white bg-slate-700 p-1 px-2 mx-3 font-medium ${activeFilter === category ? 'bg-purple-800 text-white' : ""}`}
+                className={`text-base p-1 px-4 mx-3  font-medium rounded-lg hover:text-white-100 transition-colors  ${
+                  activeFilter === category ? "bg-cp text-white-100" : "text-secondary bg-tertiary"
+                }`}
                 onClick={() => handleBtns(category)}
               >
                 {category}
               </button>
             ))}
           </article>
-          <div className="mt-16 flex justify-center flex-wrap gap-7">
+          <div className="mt-12 flex justify-center flex-wrap gap-7">
             {project.map((project, index) => (
-              <ProjectCard key={`project-${index}`} {...project} />
+              <SlideReveal key={project.id}>
+                <ProjectCard key={`project-${index}`} {...project} />
+              </SlideReveal>
             ))}
           </div>
         </div>

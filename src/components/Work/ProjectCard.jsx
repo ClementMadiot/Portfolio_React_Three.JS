@@ -2,10 +2,8 @@ import React from "react";
 import { Tilt } from "react-tilt";
 
 import { github, website } from "../../assets";
-import { SlideReveal } from "./projectIndex";
 
 const ProjectCard = ({
-  project,
   name,
   desc,
   tags,
@@ -14,7 +12,6 @@ const ProjectCard = ({
   webSiteLink,
 }) => {
   return (
-    <SlideReveal>
       <Tilt
         options={{
           max: 12,
@@ -35,7 +32,6 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-
         <div className="mt-5 h-[150px]">
           <h3 className="text-white font-bold text[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-base">{desc}</p>
@@ -48,7 +44,6 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </SlideReveal>
   );
 };
 
