@@ -50,7 +50,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Frontend Developer",
+    title: "Front-End Developer",
     icon: backend,
   },
   {
@@ -150,9 +150,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jun 2024 - Jul 2024",
     points: [
-      "I developing a web sites using React.js, TailwindCSS and other related technologies.",
-      "I implementing responsive design and ensuring cross-browser compatibility.",
-      "I using Three.js to create dynamic and engaging animations",
+      "I am developing a web site using React, TailwindCSS and other related technologies.",
+      "I am implementing responsive design and ensuring cross-browser compatibility.",
+      "I am using Three.js to create dynamic and engaging animations",
     ],
   },
 ];

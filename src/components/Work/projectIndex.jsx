@@ -35,26 +35,6 @@ export const SlideReveal = ({ children }) => {
 export const projects = [
   {
     id: 1,
-    name: "HookBank",
-    desc: "Web design of an online bank, the web site propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
-    categories: "React",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "cyan-text-gradient",
-      },
-    ],
-    image: hookbank,
-    githubLink:
-      "https://github.com/ClementMadiot/Bank_modern_app_react-TailwindCSS",
-    webSiteLink: "https://bank-modern-cm.netlify.app/",
-  },
-  {
-    id: 2,
     name: "Brainwave",
     desc: "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app.",
     categories: "React",
@@ -78,9 +58,29 @@ export const projects = [
     webSiteLink: "https://brainwave-ai-cm.netlify.app/",
   },
   {
+    id: 2,
+    name: "HookBank",
+    desc: "Web design of an online bank, that propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
+    categories: "React",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "cyan-text-gradient",
+      },
+    ],
+    image: hookbank,
+    githubLink:
+      "https://github.com/ClementMadiot/Bank_modern_app_react-TailwindCSS",
+    webSiteLink: "https://bank-modern-cm.netlify.app/",
+  },
+  {
     id: 3,
     name: "Gerich Restaurant",
-    desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails, Chef Kevin Luo's culinary vision, and a glimpse into the award-winning ambiance.",
+    desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails and the Chef Kevin Luo's culinary vision.",
     categories: "React",
     tags: [
       {
@@ -100,7 +100,7 @@ export const projects = [
   {
     id: 4,
     name: "Capture",
-    desc: `Loading page who proposes a range of professional photography services. "Capture" has smooth animations, I build a stunning slide-based interfaces for showcasing comments.`,
+    desc: `The loading page features Smooth animations introduce our professional photography services. Stunning slides showcase client comments.`,
     categories: "Javascript",
     tags: [
       {
@@ -123,7 +123,7 @@ export const projects = [
   {
     id: 5,
     name: "Jadoo",
-    desc: `Loading page serves as a jadoo booking. I added a touch of dynamism as users load the site. I create stunning slides-based interfaces for displaying comments.`,
+    desc: `Dynamic travel booking: Our loading page keeps users engaged while showcasing stunning client testimonials in a slide-based interface.`,
     categories: "Javascript",
     tags: [
       {
@@ -146,7 +146,7 @@ export const projects = [
   {
     id: 6,
     name: "Foodie",
-    desc: `Foodie is a fully responsive landing page using Javascript, It's a deliveries restaurant who proposes healthy food.`,
+    desc: `Fully responsive landing page built with Javascript, Foodie delivers healthy meals straight to their customers.`,
     categories: "Javascript",
     tags: [
       {
