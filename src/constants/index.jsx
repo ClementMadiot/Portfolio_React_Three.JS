@@ -126,11 +126,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "Dec 2022 - Sep 2023",
     points: [
-      "I completed my self-taught training through OpenClassrooms, an online platform offering courses and programs web development.",
-      "I Developing web applications using React.js and other related technologies.",
-      "I Implementing responsive design and ensuring cross-browser compatibility.",
-      "I Implementing few technologies as MongoDB and Express.JS to create a functional database",
-      "I learned the fundamentals of both front-end and back-end development and earned a certification.",
+      "I graduated from the Web Developer program at OpenClassrooms, a leading online platform for tech education. This intensive program honed my web development skills through a blend of interactive courses, hands-on projects, and personalized mentorship.",
+      "Building dynamic and interactive web applications using React.js and other related technologies.",
+      "Utilizing technologies like MongoDB and Express.js to create functional databases for data storage and retrieval.",
     ],
   },
   {

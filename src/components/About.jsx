@@ -36,7 +36,7 @@ const ServiceCard = ({ index, title, icon }) => {
   );
 };
 const About = () => {
-  const paragraphAbout = `I'm skilled software developer with experiece in TypeScript and Javascript, and expertise in frameworks like React and Three.js. I'm quick learner and collaborate closely with clients to create efficient, scalable and user-friendly solutions that solve real-world problems. Let's work together ti bring your ideas to life!`;
+  const paragraphAbout = `I'm a front-end web developer specializing in crafting user interfaces with React and Tailwind CSS.`;
   return (
     <Section
       id="about"

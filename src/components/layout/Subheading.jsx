@@ -9,16 +9,16 @@ const Subheading = ({ title, desc, paragraph }) => {
         variants={textVariant()}
         className=" flex flex-col items-center"
       >
-        <TagLine className="flex mb-4 md:justify-center items-center">
+        <TagLine className="flex mb-2 md:justify-center items-center">
           <p className='p text-bracket'>{desc}</p>
         </TagLine>
         <h2 className='h2'>{title}</h2>
       </motion.div>
       {paragraph && (
-        <div className="w-full flex flex-col sm:px-16 px-6">
+        <div className="w-full flex flex-col sm:px-16 px-4">
           <motion.p
             variants={fadeIn()}
-            className="mt-4 text-secondary text-lg max-w-3xl"
+            className="mt-4 text-secondary text-lg max-w-4xl"
           >
             {paragraph}
           </motion.p>

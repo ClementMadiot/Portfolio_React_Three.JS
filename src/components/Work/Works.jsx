@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard";
 
 const Works = () => {
   const paragraphWork =
-    "Following projects showcases my skills and experience through real-words examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my abilities to solve complex problems, work with different thechnologies and manage projfects effenctively.";
+    "Following projects showcases my skills and experience through real-words examples of my work.";
 
   const [project, setProject] = useState([]);
   // const [categories, setcategories] = useState([]);
