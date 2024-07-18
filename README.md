@@ -1,5 +1,5 @@
 <div align="center">
- <img src="./public/portfolio-3d-min.png" alt="portfolio-3D">
+  <a href="https://porfolio-3d-cm.netlify.app/" target="_blanck"><img src="./public/portfolio-3d-min.png" alt="portfolio-3D"></a>
   <h3 align="center">Portfolio 3D</h3>
 </div>
 
