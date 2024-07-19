@@ -5,9 +5,10 @@
 
 ## <br /> 📋 <a name="table">Summary</a>
 
-- [Introduction](#introduction)
-- [Technology Used](#tech-stack)
-- [Launch App](#launch-app)
+- ✨ [Introduction](#introduction)
+- 🛠 [Technology Used](#tech-stack)
+- 🚀 [Launch App](#launch-app)
+- 🎨 [Styling](#style)
 
 ## <br /> <a name="introduction">✨ Introduction</a>
 
@@ -64,5 +65,49 @@ git clone {git remote URL}
 
 > Once the dependencies are installed, start the project with the command `npm run dev`.
 
+## <br /> <a name="launch-app">🎨 Styling</a>
 
+Global styling are defined using TailwindCSS in the tailwind.config.js file.
 
+````
+theme: {
+    extend: {
+      colors: {
+        main: "#0B111E",
+        secondary: "#aaa6c3",
+        tertiary: "#151030",
+        "black-100": "#100d25",
+        "black-200": "#090325",
+        "white-100": "#f3f3f3",
+        cp: "#915eff",
+        bracket: '#ADA8C3',
+        // tag project 
+        gray: '#434343',
+        black: '#000000',
+        cyan: '#11998e',
+        blue: '#2f80ed',
+        lightBlue: '#56ccf2',
+        green:'#38ef7d',
+        pink: '#ec008c',
+        orange: '#fc6767',
+        red: '#FF0000',
+        yellow: '#f5af19',
+      },
+      boxShadow: {
+        card: "0px 35px 120px -15px #211e35",
+      },
+      screens: {
+        xs: "450px",
+        xs:"960px"
+      },
+      backgroundImage: {
+        "hero-pattern": "url('/src/assets/herobg.png')",
+      },
+      fontFamily: {
+        sora: "var(--font-sora)",
+        code: "var(--font-code)",
+        grotesk: "var(--font-grotesk)",
+      },
+    },
+  },
+````
