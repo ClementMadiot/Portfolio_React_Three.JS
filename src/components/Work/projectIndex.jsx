@@ -38,6 +38,7 @@ export const projects = [
     name: "Brainwave",
     desc: "Web application design that enables users to explore the Possibilities of AI Chatting with Brainwave, the open AI chap app.",
     categories: "React",
+    favoris: true,
     tags: [
       {
         name: "react",
@@ -62,6 +63,7 @@ export const projects = [
     name: "HookBank",
     desc: "Web design of an online bank, that propose the next generation payment method. A new way to make the payment an easy, reliable and secure.",
     categories: "React",
+    favoris: false,
     tags: [
       {
         name: "react",
@@ -82,6 +84,7 @@ export const projects = [
     name: "Gerich Restaurant",
     desc: "Web design of the luxurious restaurant. Explore the handcrafted cocktails and the Chef Kevin Luo's culinary vision.",
     categories: "React",
+    favoris: false,
     tags: [
       {
         name: "react",
@@ -102,6 +105,7 @@ export const projects = [
     name: "Capture",
     desc: `The loading page features Smooth animations introduce our professional photography services. Stunning slides showcase client comments.`,
     categories: "Javascript",
+    favoris: true,
     tags: [
       {
         name: "javascript",
@@ -125,6 +129,7 @@ export const projects = [
     name: "Jadoo",
     desc: `Dynamic travel booking: Our loading page keeps users engaged while showcasing stunning client testimonials in a slide-based interface.`,
     categories: "Javascript",
+    favoris: false,
     tags: [
       {
         name: "javascript",
@@ -148,6 +153,7 @@ export const projects = [
     name: "Foodie",
     desc: `Fully responsive landing page built with Javascript, Foodie delivers healthy meals straight to their customers.`,
     categories: "Javascript",
+    favoris: false,
     tags: [
       {
         name: "javascript",

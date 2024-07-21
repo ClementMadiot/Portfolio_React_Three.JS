@@ -11,13 +11,13 @@ const Works = () => {
     "Following projects showcases my skills and experience through real-words examples of my work.";
 
   const [project, setProject] = useState([]);
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Favs");
   const categories = ["React", "Javascript"];
 
   useEffect(() => {
     // setcategories([...new Set(projects.map((item) => item.categories))]);
-    if (activeFilter === "All") {
-      setProject(projects);
+    if (activeFilter === "Favs") {
+      setProject(projects.filter((item) => item.favoris === true));
     } else {
       setProject(projects.filter((item) => item.categories === activeFilter));
     }
@@ -25,8 +25,8 @@ const Works = () => {
 
   const handleBtns = (category) => {
     let filteredData = [];
-    if (category === "All") {
-      filteredData = projects;
+    if (category === "Favs") {
+      filteredData = projects.filter((item) => item.favoris === true);
     } else {
       filteredData = projects.filter((item) => item.categories === category);
     }
@@ -40,14 +40,14 @@ const Works = () => {
 
         <div className="w-full flex flex-col">
           <article className="flex justify-center mt-8">
-            {/* button "All"  */}
+            {/* button "Favs"  */}
             <button
               className={`text-base p-1 px-4 mx-3 font-medium rounded-lg hover:text-white-100 transition-colors ${
-                activeFilter === "All" ? "bg-cp text-white-100" : "text-secondary bg-tertiary"
+                activeFilter === "Favs" ? "bg-cp text-white-100" : "text-secondary bg-tertiary"
               }`}
-              onClick={() => handleBtns("All")}
+              onClick={() => handleBtns("Favs")}
             >
-              All
+              Favoris
             </button>
             {/* button "categories"  */}
             {categories.map((category) => (
