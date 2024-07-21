@@ -106,7 +106,7 @@ const technologies = [
   },
   {
     name: "git",
-    icon: git,
+    icon: html,
   },
   // {
   //   name: "figma",

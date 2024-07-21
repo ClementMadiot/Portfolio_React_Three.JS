@@ -28,9 +28,9 @@ const Navbar = () => {
             height={36}
             className="object-contain"
           />
-          <p className="flex text-white xs:text-[18px] text-[15px] font-bold cursor-pointer">
+          <p className="flex lg:gap-1 text-white xs:text-[20px] text-[15px] font-bold cursor-pointer">
           Clément &nbsp;
-            <span className="sm:block hidden"> | Web Developer</span>
+            <span className="sm:block hidden"> |&nbsp; Web Developer</span>
           </p>
         </Link>
         <ul className="list-none hidden md:flex flex-row gap-10">
