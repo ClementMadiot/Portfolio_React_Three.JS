@@ -23,7 +23,7 @@ const SideBar = () => {
             color="#fff"
             onClick={() => setToggle(false)}
           />
-          <div className="p-6 bg-gradient-to-r from-gray to-black  absolute top-20 ring-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar">
+          <div className="p-6 bg-gradient-to-r from-gray to-black absolute top-16 ring-0 my-2 min-w-[140px] rounded-xl sidebar">
             <ul className="list-none flex flex-col justify-end flex-1">
               {navLinks.map((nav, index) => (
                 <li
@@ -31,7 +31,7 @@ const SideBar = () => {
                   className={`${
                     active === nav.title ? "text-white" : "text-secondary"
                   } ${
-                    index === navLinks.length - 1 ? "mr-0" : "mb-4"
+                    index === navLinks.length - 1 ? "mr-0" : "mb-3"
                   } font-poppins font-medium text-[18px] hover:text-white transition duration-200 ease-out cursor-pointer`}
                   onClick={() => {
                     setActive(nav.title);
