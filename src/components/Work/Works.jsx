@@ -11,7 +11,6 @@ const Works = () => {
     "Following projects showcases my skills and experience through real-words examples of my work.";
 
   const [project, setProject] = useState([]);
-  // const [categories, setcategories] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
   const categories = ["React", "Javascript"];
 
